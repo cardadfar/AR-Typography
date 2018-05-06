@@ -9,4 +9,12 @@ AR Typography loads multiple strings of text into a list upon startup. The activ
 
 In order to create a 3D effect for the text, a white text layer is placed at position p with orientation r, and 15 additional iterations of black text is placed at position (p – (i+1)*k*r) and orientation r, where i is the index [0,14] and k is some constant.
 
-Download TextCore.cs and place it in the Scripts folder of for the HelloAR example included in AR Core. Assign a 3D text layer to textLayer. To include text to cycle through, add additional strings to the content list in the Start() function.
+Download TextCore.cs and place it in the Scripts folder of for the HelloAR example included in AR Core. Assign a 3D text layer to textLayer. 
+
+To include text to cycle through, add additional strings to the content list in the Start() function.
+
+```
+void Start() {
+    content.Add("How Far We've Come");
+}
+```
